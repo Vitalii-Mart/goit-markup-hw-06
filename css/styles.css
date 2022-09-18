@@ -620,6 +620,83 @@ font-size: 16px;
 .project .link{
     text-decoration: none;
 }
+
+.email-box{
+    display: flex;
+    width: 570px;
+    height: 86px;
+    margin-left: auto;
+}
+.email-form{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end
+}
+.email-label{
+
+}
+.email-title{
+    display: block;
+    font-weight: 700;
+font-size: 14px;
+line-height: 1.14;
+text-transform: uppercase;
+color: var(--primary-wite-color);
+margin-bottom: 20px;
+}
+.email-imput{
+    width: 358px;
+    height: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    background-color: var(--main-block-color);
+cursor: pointer;
+padding: 15px 16px;
+outline: transparent;
+color: var(--primary-wite-color);
+transition: border-color 250ms var(--timing-function);
+}
+.email-imput::placeholder{
+    font-size: 16px;
+    line-height: 1.25;
+    color: var(--footer-adres-color);
+}
+.email-label:focus-within .email-imput,
+.email-label:hover .email-imput,
+.email-label:focus .email-imput{
+    border-color: var(--accent-color);}
+
+    .email-btn{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 200px;
+        height: 50px;
+         padding: 10px 28px;
+         gap: 10px;
+    cursor: pointer;
+    margin-left: 12px;
+    background: var(--accent-color);
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+border-radius: 4px;
+border: transparent;
+transition: background-color 250ms var(--timing-function);
+    }
+.email-btn:hover,
+.email-btn:focus{
+    background-color: var(--button-hover-bg);
+}
+.email-btn-title{
+    font-weight: 700;
+font-size: 16px;
+line-height: 1.88;
+letter-spacing: 0.06em;
+color: var(--primary-wite-color);
+}
+
+
+
 /* Backdrop */
 
 .backdrop{
@@ -723,11 +800,12 @@ top: 50%;
 left: 12px;
 transition: fill 250ms var(--timing-function);
 }
-
+.register-form-field:focus-within .register-form-input,
 .register-form-field:hover .register-form-input,
 .register-form-field:focus .register-form-input{
     border-color: var(--accent-color);
 }
+.register-form-field:focus-within .register-form-icon,
 .register-form-field:hover .register-form-icon,
 .register-form-field:focus .register-form-icon{
     fill: var(--accent-color);
@@ -757,7 +835,7 @@ line-height: 1.16;
 letter-spacing: 0.01em;
 color: var(--message-text);
   }
-
+  .register-form-field:focus-within .register-form-message,
   .register-form-field:hover .register-form-message,
   .register-form-field:focus .register-form-message{
       border-color: var(--accent-color);
@@ -783,6 +861,25 @@ color: var(--message-text);
 .register-form-link{
     color: var(--accent-color);
     text-decoration-line: underline;
+}
+.register-form-checkbox:checked+ .register-form-icons .icon-filled{
+    opacity: 1;
+}
+
+.icon-empty{
+opacity: 1;
+transition: opacity 250ms var(--timing-function);
+}
+.icon-filled{
+opacity: 0;
+transition: opacity 250ms var(--timing-function);
+}
+
+.register-form-checkbox:checked+ .register-form-icons .icon-empty{
+    opacity: 0;
+}
+.register-form-desc{
+    user-select: none;
 }
 
 .register-form-btn {

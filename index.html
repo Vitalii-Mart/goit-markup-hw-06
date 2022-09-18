@@ -267,6 +267,23 @@
             ></li>
           </ul>
         </div>
+        <div class="email-box">
+          <form class="email-form">
+            <label class="email-label">
+              <p class="email-title">Підпишіться на розсилку</p>
+              <input 
+              class="email-imput"
+              type="email"
+              name="email"
+              placeholder="Введіть текст">
+           </label>
+           <button class="email-btn" type="submit">
+            <span class="email-btn-title">Підписатися</span>
+            <svg class="email-send" width="24" height="24">
+    <use href="./images/icons.svg#send"></use>
+            </svg></button>
+          </form>
+        </div>
       </div>
     </footer>
     <div class="backdrop is-hidden"data-modal>
@@ -320,15 +337,15 @@
           <label class="register-form-agreement">
             <input class="register-form-checkbox visually-hidden" type="checkbox" name="" id="" />
             <svg class="register-form-icons" width="16" height="15">
-              <use class="icon-checked" href="./images/icons.svg#empty"></use>
-              <use class="icon-unchecked" href="./images/icons.svg#filled"></use>
+              <use class="icon-empty" href="./images/icons.svg#empty"></use>
+              <use class="icon-filled" href="./images/icons.svg#filled"></use>
             </svg>
             <span class="register-form-desc">
               Погоджуюся з розсилкою та приймаю
               <a class="register-form-link" href="#" target="_blank">Умови договору</a>
             </span>
           </label>
-          <button class="register-form-btn btn" type="submit">Відправити</button> 
+          <button class="register-form-btn" type="submit">Відправити</button> 
         </form>
       </div>
     </div>
