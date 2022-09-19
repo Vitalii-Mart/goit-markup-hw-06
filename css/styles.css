@@ -771,10 +771,11 @@ background-color: var(--primary-wite-color);
 .register-form-field{
     position: relative;
     display: block;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 
 }
 .register-form-label{
+    display: block;
     font-size: 12px;
 line-height: 1.16;
 letter-spacing: 0.01em;
@@ -827,7 +828,7 @@ border: 1px solid rgba(33, 33, 33, 0.2);
 border-radius: 4px;
 transition: border-color 250ms var(--timing-function);
 cursor: pointer;
-margin-bottom: 20px;
+
 }
 .register-form-message::placeholder {
     font-size: 12px;
@@ -862,6 +863,14 @@ color: var(--message-text);
     color: var(--accent-color);
     text-decoration-line: underline;
 }
+
+/* .register-form-checkbox:hover + .register-form-icons,
+.register-form-checkbox:focus + .register-form-icons{
+    outline: 2px solid var(--accent-color);
+    outline-offset: 1px;
+    border-radius: 2px;
+} */
+
 .register-form-checkbox:checked+ .register-form-icons .icon-filled{
     opacity: 1;
 }
